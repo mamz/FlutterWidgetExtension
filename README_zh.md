@@ -65,7 +65,7 @@ Flutter组件链式构造，减少嵌套地狱，只挑选了常用功能，有�
 ```
 ## :stuck_out_tongue_winking_eye: 作者
 
-[misitebao](https://github.com/mamz)
+[mamz](https://github.com/mamz)
 
 ## :copyright: 许可
 
