@@ -1,14 +1,14 @@
 # FlutterWidgetExtension
-## :large_blue_circle: Internationalization
+## :large_blue_circle: 国际化
 
-English | [中文文档](README_zh.md)
+[English](README.md) | 中文文档
 
-## :information_source: Introductions
+## :information_source: 简介
 
-A Flutter package for chain build widget, decrease widget nested hell. Only pick the frequently used function. Some method may introduce unnecessary container. Please refre the souce code.
+Flutter组件链式构造，减少嵌套地狱，只挑选了常用功能，有可能引入不必要的容器，具体请看源码。
 
-Example
-Before:
+举例如下
+之前:
 ```dart
   Widget widget() {
     return Padding(
@@ -44,7 +44,7 @@ Before:
         )));
   }
 ```
-After:
+现在:
 ```dart
   Widget widget() {
     return Image.network("https://c-ssl.duitang.com/uploads/item/201609/20/20160920124307_mcZHQ.thumb.1000_0.jpeg")
@@ -63,10 +63,10 @@ After:
         .padding(const EdgeInsets.all(20.0));
   }
 ```
-## :stuck_out_tongue_winking_eye: Authors
+## :stuck_out_tongue_winking_eye: 作者
 
 [misitebao](https://github.com/mamz)
 
-## :copyright: License
+## :copyright: 许可
 
 [License MIT](LICENSE)
