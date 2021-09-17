@@ -1,3 +1,3 @@
 ## 0.0.1
 
-* TODO: Describe initial release.
+*  A Flutter package for chain build widget, decrease widget nested hell.

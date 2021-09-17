@@ -1,7 +1,7 @@
 name: flutter_widget_extension
-description: A new Flutter project.
+description: A Flutter package for chain build widget, decrease widget nested hell.
 version: 0.0.1
-homepage:
+homepage: https://github.com/mamz/FlutterWidgetExtension
 
 environment:
   sdk: ">=2.12.0 <3.0.0"

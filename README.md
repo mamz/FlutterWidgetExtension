@@ -45,7 +45,13 @@ Before:
   }
 ```
 After:
+```yaml
+dependencies:
+  flutter_widget_extension: ^0.0.1
+```
 ```dart
+import 'package:flutter_widget_extension/flutter_widget_extension.dart';
+
   Widget widget() {
     return Image.network("https://c-ssl.duitang.com/uploads/item/201609/20/20160920124307_mcZHQ.thumb.1000_0.jpeg")
         .round(20.0)

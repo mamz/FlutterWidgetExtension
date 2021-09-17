@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_widget_extension/widget_extension.dart';
+import 'package:flutter_widget_extension/flutter_widget_extension.dart';
 
 void main() {
   runApp(const MyApp());
