@@ -4,35 +4,35 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
 extension WidgetExtension on Widget {
-  Widget decoration(Decoration decoration) {
+  Widget addDecoration(Decoration decoration) {
     return Container(
       decoration: decoration,
       child: this,
     );
   }
 
-  Widget padding(EdgeInsetsGeometry padding) {
+  Widget addPadding(EdgeInsetsGeometry padding) {
     return Padding(
       padding: padding,
       child: this,
     );
   }
 
-  Widget margin(EdgeInsetsGeometry margin) {
+  Widget addMargin(EdgeInsetsGeometry margin) {
     return Container(
       margin: margin,
       child: this,
     );
   }
 
-  Widget backgroundColor(Color color) {
+  Widget addBackgroundColor(Color color) {
     return Container(
       color: color,
       child: this,
     );
   }
 
-  Widget alignment(AlignmentGeometry alignment) {
+  Widget addAlignment(AlignmentGeometry alignment) {
     return Container(
       alignment: alignment,
       child: this,
@@ -45,7 +45,7 @@ extension WidgetExtension on Widget {
     );
   }
 
-  Widget onTap(GestureTapCallback callback) {
+  Widget addOnTap(GestureTapCallback callback) {
     return GestureDetector(
       onTap: callback,
       child: this,
@@ -83,7 +83,7 @@ extension WidgetExtension on Widget {
     );
   }
 
-  Widget opacity(double opacity) {
+  Widget addOpacity(double opacity) {
     return Opacity(
       opacity: opacity,
       child: this,
@@ -114,7 +114,9 @@ extension WidgetExtension on Widget {
   /// * [hMargin] is the horizontal distance to left or right margin decided by [alignment]
   /// * [vMargin] is the vertical distance to top or bottom margin decided by [alignment]
   Widget badge(Widget child,
-      {AlignmentDirectional alignment = AlignmentDirectional.topEnd, double? hMargin, double? vMargin}) {
+      {AlignmentDirectional alignment = AlignmentDirectional.topEnd,
+      double? hMargin,
+      double? vMargin}) {
     double top = 0.0;
     double bottom = 0.0;
     double left = 0.0;
@@ -136,7 +138,8 @@ extension WidgetExtension on Widget {
     return Stack(alignment: alignment, children: <Widget>[
       this,
       Container(
-        margin: EdgeInsets.only(left: left, right: right, top: top, bottom: bottom),
+        margin:
+            EdgeInsets.only(left: left, right: right, top: top, bottom: bottom),
         child: child,
       )
     ]);

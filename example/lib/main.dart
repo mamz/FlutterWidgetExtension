@@ -55,9 +55,13 @@ class MyApp extends StatelessWidget {
 
   Widget widget12() {
     return const Text("Hello Flutter!",
-        style: TextStyle(
-          color: Colors.white,
-        )).margin(const EdgeInsets.all(10.0)).backgroundColor(Colors.blue).stadium().center();
+            style: TextStyle(
+              color: Colors.white,
+            ))
+        .addMargin(const EdgeInsets.all(10.0))
+        .addBackgroundColor(Colors.blue)
+        .stadium()
+        .center();
   }
 
   Widget widget21() {
@@ -95,12 +99,13 @@ class MyApp extends StatelessWidget {
   }
 
   Widget widget22() {
-    return Image.network("https://c-ssl.duitang.com/uploads/item/201609/20/20160920124307_mcZHQ.thumb.1000_0.jpeg")
+    return Image.network(
+            "https://c-ssl.duitang.com/uploads/item/201609/20/20160920124307_mcZHQ.thumb.1000_0.jpeg")
         .round(20.0)
-        .margin(const EdgeInsets.all(4.0))
-        .backgroundColor(Colors.purple)
+        .addMargin(const EdgeInsets.all(4.0))
+        .addBackgroundColor(Colors.purple)
         .round(20.0)
-        .onTap(() => debugPrint("Widget2 is clicked"))
+        .addOnTap(() => debugPrint("Widget2 is clicked"))
         .badge(IconButton(
             onPressed: () => debugPrint("Icon is clicked"),
             icon: const Icon(
@@ -108,6 +113,6 @@ class MyApp extends StatelessWidget {
               color: Colors.pink,
             )))
         .center()
-        .padding(const EdgeInsets.all(20.0));
+        .addPadding(const EdgeInsets.all(20.0));
   }
 }
